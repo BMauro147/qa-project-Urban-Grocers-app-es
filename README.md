@@ -1,3 +1,5 @@
+# Jesús Mauro Becerra Galván
+# Sprint 07
 # Proyecto Urban Grocers 
 # Guía de Creación de Usuarios y Kits para Urban Grocers
 
@@ -12,6 +14,19 @@ Documentación creada con apiDoc.
 - **Lenguaje:** Python
 - **Pruebas:** pytest
 - **Otras tecnologías: Solicitud API
+
+# Instalación adicional
+- **Pytest
+Para poder hacer uso de esto es necesario especificar en la terminal "pip install pytest" donde se procede a realizar la instalación pytest para ejecutar pruebas
+- **Import requests
+Para su uso solo es necesario declarar "import requests" al inicio del código en el archivo "create_kit_name_kit_test.py"
+
+## Uso de import
+Para que el código funcione de manera correcta, se necesitan importar los archivos "sender_stand_requests.py, data.py, configuration.py al archivo create_kit_name_kit_test.py" ya que este último es el archivo principal para ejecutar las pruebas, los demás archivos son funciones o variables que se mandan llamar al archivo principal, también son rutas especificas para hacer las solicitudes HTTP.
+
+## Ruta del proyecto
+Para poder ejecutar las pruebas necesitas trabajar desde la ruta donde se almacenan los archivos, para este caso necesitamos C:\Users\1\projects\qa-project-Urban-Grocers-app-es, puede variar la ruta especifica en la terminal.
+
 
 ## Creación de un Usuario
 
@@ -77,6 +92,11 @@ Para asegurar que la funcionalidad de creación de kits está funcionando correc
 9. **Tipo de Parámetro Incorrecto:**
    - **Solicitud:** `{ "name": 123 }`
    - **Código de Respuesta Esperado:** 400
+
+## Ejecución de pruebas
+- **Pruebas grupal con terminal:** pytest .\create_kit_name_kit_test.py
+- **Pruebas individuales:** Se ejecutan en el archivo que contiene el código, por defecto aparece un triangulo verde que al hacer clic permite ejecutar una sola prueba
+
 
 ## Conclusión
 

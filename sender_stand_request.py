@@ -11,11 +11,11 @@ def post_new_user(body):
 
 
 def post_new_client_kit(kit_body, auth_token):
-    headers = {
-        'Authorization': f'Bearer {auth_token}',  # Encabezado para autenticación
-        'Content-Type': 'application/json'  # Indica el tipo de contenido
-    }
-    response= requests.post(configuration.URL_SERVICE + configuration.KITS_PATH,
-        json=kit_body,
-        headers=headers)
+    headers = data.headers.copy()  # Usar los encabezados definidos en data.py
+    headers["Authorization"] = f"Bearer {auth_token}"  # Añadir el token de autenticación
+
+    response = requests.post(configuration.URL_SERVICE + configuration.KITS_PATH,
+                             json=kit_body,
+                             headers=headers)
+
     return response
