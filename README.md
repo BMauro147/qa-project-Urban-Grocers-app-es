@@ -13,12 +13,12 @@ Documentación creada con apiDoc.
 ## Tecnologías y Técnicas
 - **Lenguaje:** Python
 - **Pruebas:** pytest
-- **Otras tecnologías: Solicitud API
+- **Otras tecnologías:** Solicitud API
 
 ## Instalación adicional
-- **Pytest
+- **Pytest**
 Para poder hacer uso de esto es necesario especificar en la terminal "pip install pytest" donde se procede a realizar la instalación pytest para ejecutar pruebas
-- **Import requests
+- **Import requests**
 Para su uso solo es necesario declarar "import requests" al inicio del código en el archivo "create_kit_name_kit_test.py"
 
 ## Uso de import
