@@ -15,7 +15,7 @@ Documentación creada con apiDoc.
 - **Pruebas:** pytest
 - **Otras tecnologías: Solicitud API
 
-# Instalación adicional
+## Instalación adicional
 - **Pytest
 Para poder hacer uso de esto es necesario especificar en la terminal "pip install pytest" donde se procede a realizar la instalación pytest para ejecutar pruebas
 - **Import requests
