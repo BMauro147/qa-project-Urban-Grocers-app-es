@@ -27,13 +27,12 @@ def positive_assert(kit_body):
     auth_token = get_new_user_token()  # Obtener el token del usuario
     response = post_new_client_kit(kit_body, auth_token)  # Crear el kit
     assert response.status_code == 201
-
+    assert response.json()["name"] == kit_body["name"]
 
 # Función para aserciones negativas
 def negative_assert_code_400(kit_body):
     auth_token = get_new_user_token()  # Obtener el token del usuario
     response = post_new_client_kit(kit_body, auth_token)  # Crear el kit
-    print(response.json())
     assert response.status_code == 400
 
 
