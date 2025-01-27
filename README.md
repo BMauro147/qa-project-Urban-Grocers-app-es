@@ -6,7 +6,13 @@
 ## Introducción
 
 Este documento proporciona una guía para la creación de usuarios y kits, incluyendo la validación de datos y los procedimientos de prueba asociados. 
-
+### Tipos de Pruebas Realizadas
+- **Pruebas Funcionales**: Verificación de que las funcionalidades de creación de usuario y kits cumplen con los requisitos esperados. Se verificó que las solicitudes HTTP respondieran correctamente cuando se proporcionaron los parámetros adecuados.
+  
+- **Pruebas de Integración**: Validación de la correcta integración entre los diferentes componentes del sistema, especialmente la interacción entre la creación de usuario (y la obtención del `authToken`) y la posterior creación de un kit. Esto asegura que las solicitudes dependientes funcionen juntas de manera correcta.
+  
+- **Pruebas de Validación de Datos**: Aseguramiento de que el sistema maneje correctamente las variaciones en los datos de entrada, como longitudes mínimas y máximas de campos, caracteres especiales, y parámetros faltantes o incorrectos. Se verificó cómo el sistema respondía ante estos casos con códigos de error apropiados.
+  
 ## Fuente de Documentación
 Documentación creada con apiDoc.
 
